@@ -57,19 +57,19 @@ entity Project {
   workFlowAssignedTo: String;
   workAssignmentLevel: Integer;
   IsReassign: Boolean;
-  Date: DateTime;
+  Date: Timestamp;
   Comments: String;
 //   formzCategory: Association to many FormzCategory;
   isPrepopAttached: Boolean;
   taskType: Boolean;
   projectID: String;
   users: String;
-  lastDataReqTime: DateTime;
-  endDate: DateTime;
-  startDate: DateTime;
+  lastDataReqTime: Dat;
+  endDate: Timestamp;
+  startDate: Timestamp;
   isDeleted: Boolean;
   isClosed: Boolean;
-  createdDateTime: DateTime;
+  createdTimestamp: Timestamp;
   description: String(100);
   key name: String(50);
 }
