@@ -3,8 +3,8 @@ namespace my.project;
 entity Project {
   departmentId: UUID;
   networkComprise: Association to many NetworkComprise;
-  estimatedStartDate: DateTime;
-  estimatedEndDate: DateTime;
+  estimatedStartDate: Timestamp;
+  estimatedEndDate: Timestamp;
   shortname: String(10);
   Steel: Association to Steel;
   serviceRegulator: Integer;
