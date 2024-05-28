@@ -7,15 +7,21 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
+    "axios": "^1.7.2",
     "express": "^4",
     "mongodb": "^6.6.2"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
     "@sap/eslint-plugin-cds": "^3",
+    "@sap/ux-specification": "^1.120.11",
     "eslint": "^9"
   },
   "scripts": {
-    "start": "cds-serve"
-  }
+    "start": "cds-serve",
+    "watch-projectspage": "cds watch --open projectspage/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/projectspage"
+  ]
 }
